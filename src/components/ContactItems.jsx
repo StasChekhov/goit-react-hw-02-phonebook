@@ -17,6 +17,7 @@ const ContactItems = ({ id, name, number, onDelete }) => {
      );
 }
  
+
 export default ContactItems;
 
 ContactItems.propTypes = {
