@@ -1,7 +1,7 @@
 import ContactItems from './ContactItems'
 import PropTypes from 'prop-types';
 
-const ContactList = ({listContacts = []}, onDelete) => {
+const ContactList = ({ listContacts = [], onDelete }) => {
     return ( 
         <ul>
             {
@@ -11,7 +11,7 @@ const ContactList = ({listContacts = []}, onDelete) => {
                             id={e.id}
                             name={e.name}
                             number={e.number}
-                            onDelete={e.onDelete}
+                            onDelete={onDelete}
                             
                         />
                     </li>
@@ -32,5 +32,5 @@ ContactList.propTypes = {
       number: PropTypes.string.isRequired,
     }),
   ),
-  onDelete: PropTypes.func.isRequired,
+  // onDelete: PropTypes.func.isRequired,
 }
